@@ -1,9 +1,8 @@
 name: Close Stale
 
 on:
-  schedule:
-    - cron: "0 */8 * * *" # Every 8 hours
-
+  push:
+    branches: [main]
 jobs:
   close-stale:
     name: Close Stale Issues and PRs
